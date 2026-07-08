@@ -1,35 +1,72 @@
-# لیست قیمت - Pricing Landing Page
+# لیست قیمت - Arena Landing Page
 
-یک صفحه لندینگ قیمت‌گذاری ساخته شده با HTML، CSS و JavaScript.
+صفحه لندینگ Arena که با Puppeteer دانلود و تبدیل به HTML شده است.
 
 ## 🚀 شروع سریع
 
-### محلی اجرا کنید:
+### 1️⃣ نصب وابستگی‌ها:
 ```bash
-python -m http.server 8000
-# یا
-npm run dev
+npm install
 ```
 
+### 2️⃣ دانلود صفحه Arena:
+```bash
+npm run download
+```
+یا
+```bash
+node download-arena.js
+```
+
+### 3️⃣ اجرا محلی:
+```bash
+npm run dev
+```
 سپس به `http://localhost:8000` بروید.
+
+---
 
 ## 📦 Vercel Deployment
 
+### گام 1: Push به GitHub
+```bash
+git add .
+git commit -m "Add Arena landing page"
+git push origin main
+```
+
+### گام 2: Import به Vercel
 1. به [Vercel](https://vercel.com) بروید
 2. "New Project" کلیک کنید
-3. این مخزن را select کنید
-4. Deploy کنید!
+3. `listtasvireto` را select کنید
+4. "Deploy" کلیک کنید
 
-URL شما چیزی شبیه این خواهد بود:
+### گام 3: URL نهایی
 ```
 https://listtasvireto.vercel.app
 ```
 
-## 📝 ویرایش صفحه
+---
 
-- `index.html` - ساختار صفحه
-- `styles.css` - استایل‌ها
-- `script.js` - JavaScript
+## 📝 فایل‌ها
+
+- `index.html` - صفحه Arena دانلود شده
+- `download-arena.js` - اسکریپت Puppeteer برای دانلود
+- `package.json` - وابستگی‌ها و اسکریپت‌ها
+- `styles.css` - استایل‌های اضافی (اختیاری)
+- `script.js` - JavaScript اضافی (اختیاری)
+- `vercel.json` - تنظیمات Vercel
+
+---
+
+## ⚙️ نحوه کار
+
+اسکریپت `download-arena.js`:
+1. صفحه Arena را در Puppeteer باز می‌کند
+2. تمام محتوا و جاوااسکریپت را render می‌کند
+3. HTML نهایی را در `index.html` ذخیره می‌کند
+
+---
 
 ## 📄 لایسنس
 
