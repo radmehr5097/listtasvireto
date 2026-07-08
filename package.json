@@ -5,9 +5,13 @@
   "main": "index.html",
   "scripts": {
     "dev": "python -m http.server 8000",
+    "download": "node download-arena.js",
     "build": "echo 'Static site - no build needed'"
   },
-  "keywords": ["pricing", "landing"],
+  "keywords": ["pricing", "landing", "arena"],
   "author": "radmehr5097",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  }
 }
