@@ -1,0 +1,13 @@
+{
+  "name": "listtasvireto",
+  "version": "1.0.0",
+  "description": "Pricing landing page",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": ["pricing", "landing"],
+  "author": "radmehr5097",
+  "license": "MIT"
+}
